@@ -208,6 +208,7 @@ blockquote {
 ul, ol {
   margin-left: 40px;
   padding: 0;
+  text-align: left;
 
   @media #{$media-size-phone} {
     margin-left: 20px;
@@ -233,10 +234,15 @@ ol ol {
   align-items: center;
   justify-content: center;
   margin: 50px 0;
+  width: 1100px;
 
   @media #{$media-size-phone} {
     margin-top: 0;
   }
+}
+
+.pls {
+  margin-left: 300px;
 }
 
 hr {
@@ -299,4 +305,119 @@ hr {
 	top: 5px;
 	width: auto;
 	z-index: 100000;
+}
+
+// .project {
+//   display: flex;
+//   flex: 50%;
+//   /* height: 80vh;
+//   margin: 10vh 10vw; */
+//   }
+//   .project .decription {
+//   width: 60vw;
+//   margin-right: 5vw;
+//   padding-top: 1em;
+//   max-width: 26em;
+//   display: flex;
+//   flex-direction: column;
+//   }
+//   .bruh {
+//   border: 3px solid #111;
+//   padding: 0.5em 0.5em 0.5em 1em;
+//   color: #111;
+//   text-decoration: none;
+//   font-weight: 700;
+//   font-family: "Roboto Mono", monospace;
+//   max-width: 10em;
+//   background-image: linear-gradient(135deg, #111, #111);
+//   background-repeat: no-repeat;
+//   background-size: 0% 100%;
+//   transition: all 0.15s;
+//   }
+//   .bruh:after {
+//   content: "⤳";
+//   position: absolute;
+//   transform: translateX(0.33em);
+//   transition: all 0.2s;
+//   }
+//   .bruh:hover {
+//   background-size: 100% 100%;
+//   color: white;
+//   }
+//   .bruh:hover:after {
+//   transform: translateX(0.75em);
+//   }
+//   .imaga {
+//   height: 100%;
+//   display: flex;
+//   // padding: 25px 0px 0px 10px;
+//   // align-items: initial;
+//   flex: 50%;
+//   }
+//   img {
+//   height: 200px;
+//   padding: 25px;
+//   // padding: 10px 50px;
+//   // align-content: stretch;
+//   }	
+
+body {
+  background-color: #f4f7fc;
+  margin: 0;
+  height: 100vh;
+}
+article{
+  align-self: baseline;
+}
+p, li, ul {
+  line-height: 1.5em;
+  color: #24272c;
+}
+ul {
+  padding-left: 0px;
+}
+.project {
+  display: flex;
+  height: 80vh;
+}
+.project .decription {
+  width: 100vw;
+  margin-right: 5vw;
+  padding-top: 1em;
+  max-width: 30em;
+  display: flex;
+  flex-direction: column;
+}
+.project .decription a {
+  border: 3px solid #111;
+  padding: 1em 2.25em 1em 1.5em;
+  color: #111;
+  text-decoration: none;
+  max-width: 8.5em;
+  background-image: linear-gradient(135deg, #111, #111);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: all 0.15s;
+}
+.project .decription a:after {
+  content: "⤳";
+  position: dynamic;
+  transform: translateX(0.33em);
+  transition: all 0.2s;
+}
+.project .decription a:hover {
+  background-size: 100% 100%;
+  color: white;
+}
+.project .decription a:hover:after {
+  transform: translateX(0.75em);
+}
+.project .image {
+  // height: 100%;
+  width: 10px;
+  padding: 0 50px;
+}
+.project .image img {
+  height: 100px;
+  width: 10px;
 }
